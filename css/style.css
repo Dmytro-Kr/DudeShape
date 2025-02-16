@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.header_container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 44px;
+}
+.header_container-logo {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #244d4d;
+}
+.header_container-menu ul {
+  display: flex;
+  gap: 50px;
+}
+
+.header_container-menu a {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #161616;
+}
+.header_container-search {
+  display: flex;
+  gap: 30px;
+}
+.header_container-search img {
+  width: 24px;
+  height: 24px;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 27px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+}
+.intro {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+}
+.intro_disk {
+  display: flex;
+  width: 100%;
+  background-color: #154444;
+  max-height: 561px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intro_disc-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 550px;
+}
+.intro_disc-text h1 {
+  max-width: 550px;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #ffffff;
+}
+.intro_disc-text p {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  max-width: 480px;
+}
+.intro_disc-btn {
+  width: 172px;
+  height: 56px;
+  margin-top: 15px;
+}
+.intro_disc-btn a {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #154444;
+}
