@@ -46,7 +46,7 @@ html {
 .header_container-menu a {
   font-family: "DM Sans", serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.3rem;
   color: #161616;
 }
 .header_container-search {
@@ -63,15 +63,16 @@ html {
   margin-top: 27px;
   max-width: 1200px;
   width: 100%;
-  display: flex;
 }
 .intro {
   max-width: 1200px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .intro_disk {
   display: flex;
+  max-width: 49.3125rem;
   width: 100%;
   background-color: #154444;
   max-height: 561px;
@@ -79,17 +80,22 @@ html {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .intro_img {
+    display: none;
+  }
+}
 .intro_disc-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 550px;
+  max-width: 34.375rem;
 }
 .intro_disc-text h1 {
   max-width: 550px;
   font-family: "Montserrat", serif;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 3.5rem;
   color: #ffffff;
 }
 .intro_disc-text p {
@@ -110,4 +116,162 @@ html {
   font-weight: 400;
   font-size: 20px;
   color: #154444;
+}
+.intro-company {
+  margin: 0 auto;
+  max-width: 67.625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 8.75rem;
+  gap: 2.5rem;
+}
+.intro-company__title {
+  font-family: "DM Sans", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #244d4d;
+}
+.intro-company__logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  margin: 8.75rem 0 0 0;
+}
+.about-content__item {
+  position: relative;
+  width: 631px;
+  height: 612px;
+}
+.about-content__pic {
+  background-image: url(../img/Rectangle\ 94.png);
+  width: 37.25rem;
+  height: 36.0625rem;
+  position: absolute;
+  z-index: 2;
+}
+.about-content__rec {
+  position: absolute;
+  z-index: 1;
+  width: 37.25rem;
+  height: 36.0625rem;
+  background-color: #dee4e2;
+  transform: translate(2.1875rem, 2.1875rem);
+}
+.about-content {
+  display: flex;
+  max-width: 73rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.about-disc {
+  max-width: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-disc__title {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #244d4d;
+  font-size: 2rem;
+}
+.about-disc__subtitle {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #444444;
+  margin: 1.25rem 0 2.5rem 0;
+}
+.about-disc__content {
+  max-width: 27.3125rem;
+  text-align: start;
+}
+.about-disc__row-col {
+  display: flex;
+  column-gap: 1.75rem;
+  row-gap: 1.75rem;
+}
+
+.about-disc__row-col h3 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #244d4d;
+  font-size: 1.25rem;
+  margin-bottom: 0.875rem;
+}
+.about-disc__row-col p {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #383738;
+  line-height: 1.6875rem;
+}
+.about-disc__row-col img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.about-disc__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 21.875rem;
+}
+.slider {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  margin: 8.75rem 0 0 0;
+}
+.slider-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.slider-buttons__btn {
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f4f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.slider-buttons__btn i {
+  color: #d1cece;
+}
+
+.slider-buttons__btn i:hover {
+  color: #666666;
+}
+.slider-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.slider-content__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 51.25rem;
+  gap: 1.25rem;
+}
+.slider-content__title {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #242424;
+  font-size: 2rem;
+}
+.slider-content__subtitle {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #383738;
+  line-height: 1.6875rem;
 }
