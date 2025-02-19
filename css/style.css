@@ -347,3 +347,126 @@ margin: 5rem 0 0 0;
 .slider-galery__like:hover {
  background-color: #EF5423;
 }
+.furniture {
+  margin: 0 auto;
+  max-width: 72rem;
+  width: 100%;
+  padding: 8.75rem 0 0 0;
+}
+
+.furniture-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.furniture-title__title {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #242424;
+  font-size: 2rem;
+}
+.furniture-title__links {
+  display: flex;
+  gap: 6.4375rem;
+}
+.furniture-title__links a {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #919090;
+  line-height: 1.6875rem;
+  display: inline-block;
+  position: relative;
+}
+
+.furniture-title__links a::after {
+  content: "";
+  display: block;
+  width: 0; /* Изначально скрыт */
+  border-bottom: 2px solid #154444;
+  margin: 0 auto;
+  margin-top: 6px;
+  transition: width 0.3s ease;
+}
+.furniture-title__links a:hover::after {
+  width: 50px;
+}
+.furniture-title__links a:hover {
+  color: #154444;
+}
+.furniture-content {
+  display: flex;
+  margin: 5rem 0 0 0;
+  justify-content: space-between ;
+  align-items: center;
+}
+.furniture-content__img {
+  position: relative;
+  width: 577px;
+  height: 410px;
+}
+.furniture-content__left {
+  /* position: relative; */
+}
+.furniture-content__left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 187px;
+    height: 86px; /* Чтобы бордер слева растягивался */
+    border-top: 9px solid #154444;
+    border-left: 12px solid #154444;
+  
+}
+
+.furniture-content__img img {
+  position: absolute;
+  right: 11px;
+  bottom: 9px;
+
+}
+.furniture-content__right::after {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 187px;
+    height: 86px; /* Чтобы бордер слева растягивался */
+    border-bottom: 9px solid #154444;
+    border-right: 12px solid #154444;
+}
+
+.furniture-content__buttons {
+  display: grid;
+  grid-template: repeat(3, 90px) / repeat(2, 222px);
+  grid-gap: 30px;
+}
+.furniture-content__links {
+  border: 2px solid #D9DCE5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+.furniture-content__links > img {
+  width: 24px;
+  height: 24px;
+}
+.furniture-content__links > span {
+  font-family: "DM Sans", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #808080;
+}
+.furniture-content__links:hover {
+  background-color: #154444;
+}
+.furniture-content__links:hover span{
+  color: white;
+}
+
+
